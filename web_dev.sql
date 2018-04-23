@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 22, 2018 at 03:16 AM
--- Server version: 10.1.28-MariaDB
--- PHP Version: 7.1.11
+-- Generation Time: Apr 23, 2018 at 02:32 PM
+-- Server version: 10.1.29-MariaDB
+-- PHP Version: 7.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `web_dev`
+-- Database: `web dev`
 --
 
 -- --------------------------------------------------------
@@ -63,6 +63,19 @@ CREATE TABLE `facaulty` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `gender`
+--
+
+CREATE TABLE `gender` (
+  `gender_id` int(11) NOT NULL,
+  `description` int(11) NOT NULL,
+  `no` int(11) NOT NULL,
+  `status` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `unit`
 --
 
@@ -93,7 +106,6 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
---
 
 --
 -- Table structure for table `user_types`
